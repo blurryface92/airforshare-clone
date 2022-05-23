@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+    
+    {% block functions %}
+
+    {% if not files %}
+        <div class="default-innerContainer-header">
+            <h4 class="text-center">seems empty? use it dummy.</h4>
+        </div>
+    {% else %}
+        <div class="file-innerContainer-header">
+            <h4 class="display-4">Files.</h4>
+            </div>
+            {% for file in files %}
+            <div class="fileBox">
+            <img src="" alt="">
+            <span>{{file.filename}}</span>
+            </div>
+            <div class="btnContainer">
+                <a href="/file/delete/{{file.id}}"><button>Delete Files</button></a>
+            </div>
+            {% endfor %}
+        {% endif %}
+
+        
+
+    {% endblock %}

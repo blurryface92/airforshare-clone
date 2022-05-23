@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+    
+    {% block functions %}
+
+    {% if not text %}
+        <div class="default-innerContainer-header">
+
+            <h4 class="text-center">seems empty? use it dummy.</h4>
+        </div>
+        {% else %}
+        <div class="text-innerContainer-header">
+            <h4 class="display-4">Text.</h4>
+            </div>
+            {% for text in text %}
+            <div class="textBox">
+            <p>{{text.text}}</p>
+            </div>
+            <div class="btnContainer">
+                <a href="/text/delete/{{text.id}}"><button>Clear</button></a>
+                <button class="copybtn">Copy</button>
+            </div>
+            {% endfor %}
+        {% endif %}
+
+        
+
+    {% endblock %}

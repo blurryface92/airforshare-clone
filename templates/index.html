@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container homeContainer">
+    <h1 class="display-1">blurredShare</h1>
+    <div class="outerContainer">
+        <div class="sideBar">
+            
+            <div class="sideBarBody">
+                <ul>
+                    {% if not text or not files %}
+                    <li><a href="/file"><i class="fa-solid fa-file-lines"></i></a></li>
+                    <li><a href="/text"><i class="fa-regular fa-message"></i></a></li>
+                    
+                    {% else %}
+                    <li><a href="/"><i class="fa-solid fa-file-lines"></i></a></li>
+                    <li><a href="/"><i class="fa-regular fa-message"></i></a></li>
+                   {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class="innerContainer">
+            {% block functions%}
+            {% endblock %}
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

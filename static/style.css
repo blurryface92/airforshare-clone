@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* dark theme */
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.homeContainer{
+    width: 80%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+.outerContainer{
+    width: 80%;
+    height: 500px;
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+    
+}
+.sideBar{
+    width: 20%;
+    height: 100%;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    border-right: 1px solid #fff;
+}
+
+.sideBarBody{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 5px 25px;
+}
+.sideBarBody ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.sideBarBody ul li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.sideBarBody ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+.sideBarBody ul li a i{
+    color: white;
+}
+.innerContainer{
+    width: 100%;
+    height: 100%;
+}
+.default-innerContainer-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.default-innerContainer-header h1,.file-innerContainer-header h1{
+    text-align: center;
+}
+.text-innerContainer-header{
+    padding: 12px;
+}
+.textBox{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    padding-left: 12px;
+}
+.textBox textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #1a1a1a;
+}
+.textBox textarea:focus{
+    outline: none;
+    background-color: #1a1a1a;
+}
+.btnContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 14px;
+}
+.btnContainer button{
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid #fff;
+    padding: 7px 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #1a1a1a;
+}
+
+.file-innerContainer-header{
+    padding-left: 12px;
+}
+.fileBox{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    padding-left: 12px;
+}
+.fileBox form input[type="file"],
+input[type="file"]:visited,
+input[type="file"]:hover,
+input[type="file"]:focus,
+input[type="file"]:active {
+    margin:0;
+    padding: 0em 0em;
+    padding: 0rem 0rem;
+    background: #1a1a1a;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fileBox form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

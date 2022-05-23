@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block functions %}
+    
+        <div class="text-innerContainer-header">
+    
+            <h4 class="display-4">Text.</h4>
+            <div class="textBox">
+                <form action="/text/upload" method="post">
+                    <textarea name="text" class="form-control" id="textBox" rows="10" placeholder="Type your text here..."></textarea>
+                    <div class="btnContainer">
+                        <a href="/text/delete"><button>Clear</button></a>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+    
+    {% endblock %}
