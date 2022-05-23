@@ -9,11 +9,11 @@
             <div class="fileBox">
                 <form action="/file/upload" method="post" enctype="multipart/form-data">
                     <input type="file" name="filename" id="file">
+                    <div class="btnContainer">
+                        <a href="/file/delete"><button>Clear</button></a>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
-                <div class="btnContainer">
-                    <a href="/file/delete"><button>Clear</button></a>
-                    <button type="submit">Submit</button>
-                </div>
             </div>
     
     {% endblock %}
