@@ -13,7 +13,7 @@
             {% for file in files %}
             <div class="fileBox">
             <img src="" alt="">
-            <span>{{file.filename}}</span>
+            <span><a href="/files/{{file.filename}}" target="_blank" download>{{file.filename}}</a></span>
             </div>
             <div class="btnContainer">
                 <a href="/file/delete/{{file.id}}"><button>Delete Files</button></a>
